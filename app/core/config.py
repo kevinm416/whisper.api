@@ -20,7 +20,6 @@ class Settings(BaseSettings):
     SERVER_HOST: AnyHttpUrl = env.get("SERVER_HOST")
 
     POSTGRES_DATABASE_URL: str = env.get("POSTGRES_DATABASE_URL")
-    TEST_DATABASE_URL: str = env.get("POSTGRES_DATABASE_URL")
 
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = [
         "http://localhost:3000",
